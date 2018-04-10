@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/Pizza.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Little Pizza Place</title>
+  </head>
+  <body>
+    <h1 class="white-title">Welcome to the Little Pizza Place</h1>
+	<p class="center"> Pick out what you want on your pie, pay, and someone will deliver shortly</p>	
+	
+	<!--Pick your size-->
+	<form id="menu">
+		<div class="card-group">
+			<div class="card bg-secondary">
+				<div class="card-body">
+					<h2>Pick Your Size</h2>
+					<input type="radio" name="size" value="Personal">Personal<br>
+					<input type="radio" name="size" value="Medium">Medium<br>
+					<input type="radio" name="size" value="Large">Large<br>
+					<input type="radio" name="size" value="Extra Large">Extra Large<br>
+				</div>
+			</div>
+		<!--/Pick your size-->
+		
+		<!--Pick your Crust-->
+			<div class="card bg-secondary">
+				<div class="card-body">
+					<h2>Pick Your Crust</h2>
+					<input type="radio" name="crust" value="Plain Crust">Plain Crust<br>
+					<input type="radio" name="crust" value="Garlic Butter Crust">Garlic Butter Crust<br>
+					<input type="radio" name="crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
+					<input type="radio" name="crust" value="Spicy Crust">Spicy Crust<br>
+					<input type="radio" name="crust" value="House Special Crust">House Special Crust<br>
+				</div>
+			</div>
+		<!--/Pick your Crust-->
+		
+		<!--Pick your Sauce-->
+			<div class="card bg-secondary">
+				<div class="card-body">
+					<h2>Pick Your Sauce</h2>
+					<input type="radio" name="sauce" value="Marinara">Marinara Sauce<br>
+					<input type="radio" name="sauce" value="White">White Sauce<br>
+					<input type="radio" name="sauce" value="BBQ">BBQ Sauce<br>
+					<input type="radio" name="sauce" value="No Sauce">No Sauce<br>
+				</div>
+			</div>
+		<!--/Pick your Sauce-->
+		</div>
+			<!--Pick your cheeese-->
+		<div class="card-group">
+			<div class="card bg-secondary">
+				<div class="card-body">
+					<h2>Pick Your Cheese</h2>
+					<input type="radio" name="cheese" value="Regular Cheese">Regular Cheese<br>
+					<input type="radio" name="cheese" value="No Cheese">No Cheese<br>
+					<input type="radio" name="cheese" value="Extra Cheese">Extra Cheese<br>
+				</div>
+			</div>
+		<!--/Pick your cheesee-->
+		
+		<!--Pick your Meat-->
+			<div class="card bg-secondary">
+				<div class="card-body">
+					<h2>Pick Your Meats</h2>
+					<p>1st topping is free, each additional will be $1</p>
+					<input type="checkbox" name="meat" value="Pepperoni">Pepperoni<br>
+					<input type="checkbox" name="meat" value="Sausage">Sausage<br>
+					<input type="checkbox" name="meat" value="Canadian Bacon">Canadian Bacon<br>
+					<input type="checkbox" name="meat" value="Ground Beef">Ground Beef<br>
+					<input type="checkbox" name="meat" value="Anchovy">Anchovy<br>
+					<input type="checkbox" name="meat" value="Chicken">Chicken<br>
+				</div>
+			</div>
+		<!--/Pick your Meat-->
+		
+		<!--Pick your Veg-->
+			<div class="card bg-secondary">
+				<div class="card-body">
+					<h2>Pick Your Veggies</h2>
+					<p>1st topping is free, each additional will be $1</p>
+					<input type="checkbox" name="veggie" value="Tomatoes">Tomatoes<br>
+					<input type="checkbox" name="veggie" value="Onions">Onions<br>
+					<input type="checkbox" name="veggie" value="Olives">Olives<br>
+					<input type="checkbox" name="veggie" value="Green Peppers">Green Peppers<br>
+					<input type="checkbox" name="veggie" value="Mushrooms">Mushrooms<br>
+					<input type="checkbox" name="veggie" value="Pineapple">Pineapple<br>
+					<input type="checkbox" name="veggie" value="Spinach">Spinach<br>
+					<input type="checkbox" name="veggie" value="Jalapeno">Jalapeno<br>
+				</div>
+			</div>
+		<!--/Pick your Veg-->
+		</div>
+	</form>
+	
+	<!--Order and Cancel Buttons-->
+	<br>
+	<button type="button" class="btn btn btn-primary btn-lg btn-block" onclick="placeOrder()">Place Order</button>
+	<button type="button" class="btn btn-danger btn-lg btn-block" onclick="clearOrder()">Cancel</button>
+	<!--/Order and Cancel Buttons-->
+	
+	<!--Reciept-->
+	<div id="receipt" class="center">	
+	<h3 class="center">Your Receipt<h3>
+		<div class="container">
+			<div class="row">
+				<div class="col" id="ordered">
+				</div>
+				<div class="col" id="price">
+				</div>
+			</div>	
+		</div>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col">
+				Total
+				</div>
+				<div class="col" id="total">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="pizza.js"></script>
+	</body>
+</html>
+

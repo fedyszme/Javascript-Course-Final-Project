@@ -1,0 +1,83 @@
+body {
+	background-image: url("../images/baked-bread-cheese-214161.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	
+}
+
+.white-title {
+	color: #fff;
+	text-align: center;
+	text-shadow: .5px .5px #000;
+	font-size: 3em;
+	font-family: Verdana, Times New Roman;
+}
+
+.center {
+	color: #fff;
+	font-size: 1.5em;
+	font-family: Verdana, Times New Roman;
+	text-align: center;
+	text-shadow: .5px .5px #000;
+}
+
+h2 {
+	font-size: 1em;
+	font-family: Verdana, Times New Roman;
+	text-align: center;
+	text-shadow: .5px .5px #000;
+}
+
+
+
+.card {
+	margin: 10px auto;
+	color: #fff;
+	text-shadow: .5px .5px #000;
+	max-width: 20rem;
+	font-size:1em;
+}
+
+.btn {
+	max-width: 25rem;
+	margin: 10px auto;
+}
+
+#receipt {
+	opacity: 0;
+	margin: auto;
+	width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+	background-color: #6c757d;
+
+}
+
+
+
+
+#ordered {
+	font-size: .5em;
+	flex: 1 250px;
+	padding: 1px 0 5px;
+	width: 300px;
+	
+
+}
+
+#price {
+	font-size: .5em;
+	flex: 1 250px;
+	padding: 1px 0 5px;
+	width: 300px;
+}
+
+
+
+
+
+
+
+
